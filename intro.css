@@ -1,0 +1,19 @@
+.intro{
+    width: 100%; /*Ширина*/
+    height: 100vh; /*Высота*/
+    -webkit-background-size: cover;
+    background-size:cover ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.intro__title{
+    font-size: 35px;
+    font-weight: 100;
+    text-align: center;
+    line-height: 1;
+    font-family: 'Arimo', sans-serif;
+
+}

@@ -1,0 +1,99 @@
+body {
+    background: black;
+     margin : 0; //
+
+    font-size: 15px; /* размер шрифта*/
+    color: #ffffff; /* цвет шрифта*/
+
+    line-height: 1.6; /* межстрочный отступ*/
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box; /* Для работы с префиксами*/
+}
+
+
+.conteiner{
+    width: 100%; /* Ширина контейнера */
+    max-width: 1200px; /* Максимальная ширина контейнера*/
+    margin: 0 auto; /* Выравнивание контейнера по центру*/
+}
+
+
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0; /*Устанавливает величину отступа от каждого края элемента.) (Если у элемента нет родителя, отступом будет расстояние от края элемента до края окна браузера с учетом того, что у самого окна по умолчанию тоже установлены отступы)*/
+
+}
+
+.header{
+    padding-top: 30px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.header__inner{
+    display: flex; /*Загуглить сочетание этих строк для навигации*/
+    justify-content: space-between;
+    align-items: center; /*выравнивает навигацию */
+}
+
+.header__logo{
+    font-size: 30px;
+    font-weight: 700;
+    font-family: 'Archivo Black', sans-serif;
+
+}
+
+.it{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    color:#f4a460;
+}
+
+.nav{
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+
+.nav__link{
+    display: inline-block;/* сочетается с нижними 2 параматрами (Загуглить)*/
+    vertical-align: top;
+    margin: 0 20px;
+
+    position:relative;
+
+    color: white;
+    text-decoration: none; /*убрать нижнее подчеркивание*/
+
+    font-family: 'Arimo', sans-serif;
+
+}
+.nav__link:after {
+    content: "";
+
+    width: 100%;
+    height: 3px;
+    display: none;
+
+    background-color: aqua;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+}
+.nav__link:hover{
+    color: aqua;  /*Изменение цвета при наведении*/
+    
+}
+.nav__link:hover:after{
+    display: block;
+}
