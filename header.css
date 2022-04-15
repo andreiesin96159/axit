@@ -24,7 +24,7 @@ body {
 
 
 h1, h2, h3, h4, h5, h6 {
-    margin: 0; /*Устанавливает величину отступа от каждого края элемента.) (Если у элемента нет родителя, отступом будет расстояние от края элемента до края окна браузера с учетом того, что у самого окна по умолчанию тоже установлены отступы)*/
+    margin: 0;
 
 }
 
@@ -65,14 +65,14 @@ h1, h2, h3, h4, h5, h6 {
 
 
 .nav__link{
-    display: inline-block;/* сочетается с нижними 2 параматрами (Загуглить)*/
+    display: inline-block;
     vertical-align: top;
     margin: 0 20px;
 
     position:relative;
 
     color: white;
-    text-decoration: none; /*убрать нижнее подчеркивание*/
+    text-decoration: none; 
 
     font-family: 'Arimo', sans-serif;
 
